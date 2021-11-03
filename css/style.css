@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: rgb(43, 43, 43);
+}
+.content {
+    width: min(90%, 25rem);
+    height: 90vh;
+    background: rgb(43, 43, 43);
+    border-radius: 1rem;
+    padding: 4rem 1rem;
+    box-shadow: -2px -2px 7px rgba(63, 147, 255, 0.6), 5px 5px 5px rgba(0, 0, 0, 0.7);
+                 
+}
+.content .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+    color: rgb(4, 91, 149);
+}
+.content form {
+    width: 100%;
+}
+.content .field {
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-bottom: 2rem;
+}
+form > .field {
+    margin-top: 3rem;
+}
+.field input {
+    width: min(100%, 20rem);
+    height: 100%;
+    margin-inline: auto;
+    padding: 1.5rem 0 1.5rem 3.5rem;
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    background: rgb(43, 43, 43);
+    border-radius: 2.5rem;
+    box-shadow: 3px 2px 2px rgb(0, 0, 0), -2px -3px 2px rgb(19, 85, 130);
+}
+.field input:focus {
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    box-shadow: inset 2px 2px 5px rgb(0, 0, 0), 
+                inset -3px -3px 7px rgb(19, 85, 130);
+}
+::placeholder {
+    color: rgb(255, 255, 255);
+}
+/* ::-webkit-input-placeholder { 
+    color: pink;
+  }
+  ::-moz-placeholder {
+    color: pink;
+  }
+  :-ms-input-placeholder {
+    color: pink;
+  }
+  :-moz-placeholder { 
+    color: pink;
+  }
+  input::-webkit-input-placeholder {
+    color: #999;
+}
+input:focus::-webkit-input-placeholder {
+    color: red;
+} */
+.field .icon {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
+    color: rgb(238, 238, 238);
+}
+.forgot-pass {
+    text-align: left;
+    margin: .7rem 0 .7rem 2rem;
+}
+.forgot-pass a {
+    font-size: 1rem;
+    color: rgb(52, 152, 219);
+    text-decoration: none;
+}
+.forgot-pass a:hover {
+    text-decoration: underline;
+}
+button {
+    width: min(100%, 20rem);
+    height: 3.5rem;
+    margin: 1.2rem 0;
+    color: rgb(232, 232, 232);
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: rgb(43, 43, 43);
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    box-shadow: 3px 2px 2px rgb(0, 0, 0), -2px -3px 2px rgb(19, 85, 130);
+}
+
+button:focus {
+    color: rgb(52, 152, 219);
+    box-shadow: inset 2px 2px 5px rgb(0, 0, 0), 
+                inset -3px -3px 7px rgb(19, 85, 130);
+}
+.signup {
+    font-size: 1rem;
+    color: rgb(232, 232, 232);
+    margin: 1rem 0;
+}
+.signup a {
+    color: rgb(52, 152, 219);
+    text-decoration: none;
+}
+.signup a:hover {
+    text-decoration: underline;
+}
